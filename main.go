@@ -64,6 +64,10 @@ func RenderPage(w http.ResponseWriter) {
 
 func main() {
   fmt.Println("server on port 8080")
+	
+  http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		RenderPage(w)
+	})
 	port, ok := os.LookupEnv("PORT")
 
     if ok == false {
