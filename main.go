@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"text/template"
 	"fmt"
+	"os"
 )
 
 type meme struct {
@@ -69,5 +70,5 @@ func main() {
         port = "8080"
     }
 
-    log.Println(http.ListenAndServe(":"+port, r))
+    log.Println(http.ListenAndServe(":"+port, nil))
 }
