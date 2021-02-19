@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.kym-cdn.com/photos/images/masonry/001/725/608/cb0.jpg"
+        type="image/x-icon">
+    <title>Memes</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            color: white;
+            font-family: verdana;
+        }
+
+        article {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body align="center" >
+    <h1>
+        <div align="center" >
+            {{ .Title }}
+        </div>
+    </h1>
+    <article align="center" >
+        <div>
+            {{ .Body}}
+        </div>
+    </article>
+</body>
+
+</html>
