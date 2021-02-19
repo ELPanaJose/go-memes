@@ -39,7 +39,7 @@ func RenderApi(documentChan chan string, res *http.Response) {
 }
 func RenderPage(w http.ResponseWriter) {
 
-	url := "https://api-bruh.elpanajose.repl.co/memes"
+	url := "https://api-bruh-2.elpanajose.repl.co/memes"
 
 	req, _ := http.NewRequest("GET", url, nil)
 
